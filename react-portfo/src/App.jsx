@@ -1,15 +1,34 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import AboutMe from "./AboutMe.jsx";
+import Portfolio from "./Portfolio.jsx";
+import Contact from "./Contact.jsx";
+import Resume from "./Resume.jsx";
+import "./App.css";
+
 function App() {
+  let component;
+  if (
+    window.location.pathname === "/About-Me" ||
+    window.location.pathname === "/"
+  ) {
+    component = <AboutMe></AboutMe>;
+  } else if (window.location.pathname === "/Portfolio") {
+    component = <Portfolio></Portfolio>;
+  } else if (window.location.pathname === "/Contact") {
+    component = <Contact></Contact>;
+  } else if (window.location.pathname === "/Resume") {
+    component = <Resume></Resume>;
+  }
   return (
-    <div className="card" style={{width: "18rem"}}>
-  <img src="..." class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <>
+      <nav>
+        <h1>Julian</h1>
+        <a href="/About-Me">About Me</a>
+        <a href="/Portfolio">Portfolio</a>
+        <a href="/Contact">Contact</a>
+        <a href="/Resume">Resume</a>
+      </nav>
+      <main>{component}</main>
+    </>
   );
 }
 
