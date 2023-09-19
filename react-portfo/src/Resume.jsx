@@ -2,7 +2,8 @@ import "./App.css";
 export default function Resume() {
   return (
     <>
-      <h1>About Me</h1>
+      <h1>Resume</h1>
+      <div className="Resume-Skill"></div>
     </>
   );
 }
