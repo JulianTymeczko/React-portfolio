@@ -6,6 +6,7 @@ nav {
   flex-direction: row;
   gap: 40px;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-image: url(../src/react-background-portfo.jpg);
 }
@@ -33,6 +34,9 @@ nav h1:hover {
 }
 nav a {
   text-decoration: none;
+}
+nav a:hover {
+  cursor: pointer;
 }
 main {
   background-color: #ff6b6b;

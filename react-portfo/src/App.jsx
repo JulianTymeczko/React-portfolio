@@ -3,29 +3,46 @@ import Portfolio from "./Portfolio.jsx";
 import Contact from "./Contact.jsx";
 import Resume from "./Resume.jsx";
 import "./App.css";
-
+import { useState } from "react";
 function App() {
-  let component;
-  if (
-    window.location.pathname === "/About-Me" ||
-    window.location.pathname === "/"
-  ) {
-    component = <AboutMe></AboutMe>;
-  } else if (window.location.pathname === "/Portfolio") {
-    component = <Portfolio></Portfolio>;
-  } else if (window.location.pathname === "/Contact") {
-    component = <Contact></Contact>;
-  } else if (window.location.pathname === "/Resume") {
-    component = <Resume></Resume>;
-  }
+  const [component, setComponent] = useState(<AboutMe></AboutMe>);
+
   return (
     <>
       <nav>
         <h1>Julian</h1>
-        <a href="/About-Me">About Me</a>
-        <a href="/Portfolio">Portfolio</a>
-        <a href="/Contact">Contact</a>
-        <a href="/Resume">Resume</a>
+        <a
+          href="#"
+          onClick={() => {
+            setComponent(<AboutMe></AboutMe>);
+          }}
+        >
+          About Me
+        </a>
+        <a
+          href="#"
+          onClick={() => {
+            setComponent(<Portfolio></Portfolio>);
+          }}
+        >
+          Portfolio
+        </a>
+        <a
+          href="#"
+          onClick={() => {
+            setComponent(<Contact></Contact>);
+          }}
+        >
+          Contact
+        </a>
+        <a
+          href="#"
+          onClick={() => {
+            setComponent(<Resume></Resume>);
+          }}
+        >
+          Resume
+        </a>
       </nav>
       <main>{component}</main>
     </>

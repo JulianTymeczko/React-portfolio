@@ -2,7 +2,7 @@ import "./App.css";
 export default function Contact() {
   return (
     <>
-      <h1>About Me</h1>
+      <h1>Contact</h1>
     </>
   );
 }
