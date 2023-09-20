@@ -5,3 +5,15 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   font-weight: 400;
 }
+.Resume-Skill section {
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  gap: 20px;
+}
+.Resume-Skill section a {
+  text-decoration: none;
+}
+.Resume-Skill section a:hover {
+  text-decoration: underline;
+}

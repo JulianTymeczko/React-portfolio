@@ -9,31 +9,41 @@ export default function Portfolio() {
         <div className="PortfolioImg">
           <div>
             <h1>Project 1</h1>
-            <a href="#">View Live</a>
+            <a href="https://github.com/JulianTymeczko?tab=repositories">
+              View Live
+            </a>
           </div>
         </div>
         <div className="PortfolioImg">
           <div>
             <h1>Project 2</h1>
-            <a href="#">View Live</a>
+            <a href="https://github.com/JulianTymeczko?tab=repositories">
+              View Live
+            </a>
           </div>
         </div>
         <div className="PortfolioImg">
           <div>
             <h1>Project 3</h1>
-            <a href="#">View Live</a>
+            <a href="https://github.com/JulianTymeczko?tab=repositories">
+              View Live
+            </a>
           </div>
         </div>
         <div className="PortfolioImg">
           <div>
             <h1>Project 4</h1>
-            <a href="#">View Live</a>
+            <a href="https://github.com/JulianTymeczko?tab=repositories">
+              View Live
+            </a>
           </div>
         </div>
         <div className="PortfolioImg">
           <div>
             <h1>Project 5</h1>
-            <a href="#">View Live</a>
+            <a href="https://github.com/JulianTymeczko?tab=repositories">
+              View Live
+            </a>
           </div>
         </div>
       </div>
